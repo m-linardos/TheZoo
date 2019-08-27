@@ -7,8 +7,7 @@ namespace TheZoo.Models
 {
     public class WaterFowl
     {
-        public int Id { get; set; }
-        public int MyProperty { get; set; }
+        public int Id { get; set; }       
         public int age { get; set; }
         public string Type { get; set; }
         public string Name { get; set; }

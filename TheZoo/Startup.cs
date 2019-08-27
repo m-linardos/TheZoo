@@ -53,6 +53,10 @@ namespace TheZoo
             }
 
             app.UseMvc();
+
+
+
+            app.UseStaticFiles();       // ADDED TO ALLOW US TO USE "WebApiTester.HTML" TO SET UP API TESTING THROUGH 'HTTPS://localhost:yourPort/api/ (
         }
     }
 }
