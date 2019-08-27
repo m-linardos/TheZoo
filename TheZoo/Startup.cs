@@ -52,11 +52,12 @@ namespace TheZoo
                 app.UseDeveloperExceptionPage();
             }
 
+              app.UseStaticFiles(); //*** 'app.UseStaticFiles();' must come before 'app.UseMvc();'                                 in the Configure method*/
             app.UseMvc();
 
 
 
-            app.UseStaticFiles();       // ADDED TO ALLOW US TO USE "WebApiTester.HTML" TO SET UP API TESTING THROUGH 'HTTPS://localhost:yourPort/api/ (
+                // ADDED TO ALLOW US TO USE "WebApiTester.HTML" TO SET UP API TESTING THROUGH 'HTTPS://localhost:yourPort/api/ (
         }
     }
 }
